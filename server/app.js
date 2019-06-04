@@ -6,6 +6,7 @@ const express = require('express');
 const helmet = require('helmet');
 const origin = require('./shared/origin');
 const path = require('path');
+require('express-async-errors');
 
 const auth = require('./shared/auth');
 const config = require('../config/server');

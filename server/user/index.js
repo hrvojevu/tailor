@@ -3,7 +3,7 @@
 const { authenticate } = require('../shared/auth');
 const ctrl = require('./user.controller');
 const model = require('./user.model');
-const router = require('express-promise-router')();
+const router = require('express').Router();
 
 router
   // Public routes:
