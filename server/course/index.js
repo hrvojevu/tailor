@@ -7,7 +7,7 @@ const { createError } = require('../shared/error/helpers');
 const ctrl = require('./course.controller');
 const path = require('path');
 const processQuery = require('../shared/util/processListQuery')();
-const router = require('express-promise-router')();
+const router = require('express').Router();
 
 const activity = require('../activity');
 const comment = require('../comment');

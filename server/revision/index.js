@@ -4,7 +4,7 @@ const { Revision, User } = require('../shared/database');
 const { createError } = require('../shared/error/helpers');
 const ctrl = require('./revision.controller');
 const { NOT_FOUND } = require('http-status-codes');
-const router = require('express-promise-router')();
+const router = require('express').Router();
 
 router.param('revisionId', getRevision);
 

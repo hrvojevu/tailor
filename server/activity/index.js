@@ -5,7 +5,7 @@ const { createError } = require('../shared/error/helpers');
 const ctrl = require('./activity.controller');
 const { NOT_FOUND } = require('http-status-codes');
 const processListQuery = require('../shared/util/processListQuery');
-const router = require('express-promise-router')();
+const router = require('express').Router();
 
 const processQuery = processListQuery({ order: [['position']] });
 

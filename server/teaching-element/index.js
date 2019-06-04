@@ -2,7 +2,7 @@
 
 const ctrl = require('./te.controller');
 const processQuery = require('../shared/util/processListQuery')();
-const router = require('express-promise-router')();
+const router = require('express').Router();
 
 router
   .route('/')

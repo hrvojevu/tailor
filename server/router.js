@@ -19,7 +19,7 @@ router.use(storage.path, storage.router);
 
 module.exports = router;
 
-function processBody(req, res, next) {
+function processBody(req, _res, next) {
   const { body } = req;
   if (body && body.email) body.email = body.email.toLowerCase();
   next();
